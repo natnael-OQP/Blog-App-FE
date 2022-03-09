@@ -4,6 +4,7 @@ import Homepage from "./pages/homepage/Homepage";
 import Header from "./components/header/Header";
 import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
+import Single from "./pages/single/Single";
 
 function App() {
 	const user = false;
@@ -17,6 +18,7 @@ function App() {
 					path="/login"
 					element={user ? <Homepage /> : <Login />}
 				/>
+				<Route path="/post:id" element={<Single />} />
 			</Routes>
 		</Router>
 	);
