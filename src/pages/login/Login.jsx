@@ -23,7 +23,7 @@ export default function Login() {
 				<button className="loginButton">Login</button>
 			</form>
 			<button
-				onClick={() => navigate("/register")}
+				onClick={() => navigate("/")}
 				className="loginRegisterButton"
 			>
 				Register
