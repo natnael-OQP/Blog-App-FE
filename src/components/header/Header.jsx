@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./header.css";
+import { FaSearch } from "react-icons/fa";
 
 export default function Header() {
 	const user = true;
@@ -52,7 +53,9 @@ export default function Header() {
 						</li>
 					</ul>
 				)}
-				<i className="topSearchIcon fas fa-search"></i>
+				<span className="topSearchIcon">
+					<FaSearch />
+				</span>
 			</div>
 		</div>
 	);
