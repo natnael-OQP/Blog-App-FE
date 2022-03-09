@@ -11,14 +11,12 @@ function App() {
 		<Router>
 			<Header />
 			<Routes>
-				<Route path="/" element={<Homepage />} />
-				{user ? (
-					<Route path="/" element={<Homepage />} />
-				) : (
-					<Route path="/register" element={<Register />} />
-				)}
+				<Route path="/" element={user ? <Homepage /> : <Register />} />
 				<Route path="/posts" element={<Homepage />} />
-				<Route path="/login" element={<Login />} />
+				<Route
+					path="/login"
+					element={user ? <Homepage /> : <Login />}
+				/>
 			</Routes>
 		</Router>
 	);
