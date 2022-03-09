@@ -1,7 +1,7 @@
 import { useLocation } from "react-router";
 import Banner from "../../components/banner/Banner";
-// import Posts from "../../components/posts/Posts";
-// import Sidebar from "../../components/sidebar/Sidebar";
+import Posts from "../../components/posts/Posts";
+import Sidebar from "../../components/sidebar/Sidebar";
 import "./homepage.css";
 
 export default function Homepage() {
@@ -11,11 +11,8 @@ export default function Homepage() {
 		<>
 			<Banner />
 			<div className="home">
-				{/*
-      
-        <Posts />
-        <Sidebar />
-      */}
+				<Posts />
+				<Sidebar />
 			</div>
 		</>
 	);
