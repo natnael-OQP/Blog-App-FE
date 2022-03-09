@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./singlePost.css";
+import { FaEdit, FaTrashAlt } from "react-icons/fa";
 
 export default function Post() {
 	return (
@@ -13,8 +14,12 @@ export default function Post() {
 				<h1 className="singlePostTitle">
 					Lorem ipsum dolor
 					<div className="singlePostEdit">
-						<i className="singlePostIcon far fa-edit"></i>
-						<i className="singlePostIcon far fa-trash-alt"></i>
+						<span className="singlePostIcon">
+							<FaEdit />
+						</span>
+						<span className="singlePostIcon">
+							<FaTrashAlt />
+						</span>
 					</div>
 				</h1>
 				<div className="singlePostInfo">
